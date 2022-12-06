@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class MyBottomBar extends StatelessWidget {
-
+  
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
       child: Container(
         height: 60.0,
         child: Padding(
-          padding: EdgeInsets.only(top : 6.0),
+          padding: EdgeInsets.only(top: 6.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -35,13 +35,20 @@ class MyBottomBar extends StatelessWidget {
               ),
               Column(
                 children: [
-                  Icon(FontAwesomeIcons.user),
-                  Text('Profile',
-                  style: TextStyle(fontSize: 16),
+                  Icon(FontAwesomeIcons.cartShopping),
+                  Text('Market',
+                    style: TextStyle(fontSize: 16),
                   ),
                 ],
               ),
-              Column(),
+              Column(
+                children: [
+                  Icon(FontAwesomeIcons.user),
+                  Text('Profile',
+                    style: TextStyle(fontSize: 16),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
